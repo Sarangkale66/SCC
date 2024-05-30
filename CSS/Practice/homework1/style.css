@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.page1{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+#card{
+  background-color: white;
+  margin: 20px auto;
+  height: 75%;
+  padding: 10px;
+  width: 25%;
+  border-radius:10px;
+  box-shadow: 0px 0px 3px 0px black;
+}
+.image>img{
+ margin:0px 3px;
+ height: 52%;
+ width: 98%;
+ background-color: blue;
+ border-radius: 10px;
+}
+
+.naturebtn{
+  margin-block:10px ;
+  margin-left: 20px;
+  padding: 1px 15px ;
+  margin-right:5px ;
+  border: none;
+  border-radius: 50px;
+  font-weight: 525;
+  box-shadow: 0px 0px 3px 0px black;
+  background-color: white;
+}
+
+.lakebtn{
+  padding: 1px 15px ;
+  border: none;
+  border-radius: 50px;
+  font-weight: 525;
+  box-shadow: 0px 0px 3px 0px black;
+  background-color: white;
+}
+
+#card>h1{
+  margin-left: 8px;
+  margin-block: 10px;
+}
+
+.readbtn{
+  font-weight: 600;
+  border: none;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: rgba(149, 190, 255, 0.814);
+  color:blue;
+}
+
+.readbtn:hover{
+  background-color:rgba(0, 128, 0, 0.732) ;
+}
+.readbtn:active{
+  background-color: black;
+}
+
+#card>p{
+  margin-inline:15px ;
+  width: 90%;
+}

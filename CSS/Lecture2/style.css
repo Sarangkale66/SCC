@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+#paglu{
+  font-style:italic;
+}
+h1{
+  font-family:Danfo,cursive ;
+  line-height: 0px;
+  font-size:100px;
+  font-weight: 300;
+}
+/* font-size */
+/* font-weight. */
+/* font-style */
+/* line-height */
+/* font-family */
+.shaani{
+  /* named color */
+  background-color:burlywood;
+}
+
+#priti{
+  background-color: #127f74;
+}
+
+.vishu{
+  background-color:rgb(100, 138, 154);
+}
+
+.sank{
+  background-color: rgba(176, 126, 126, 0.7);
+}
+
+#babu{
+  background-color: hsla(1, 65%, 36%, 0.753);
+}
+
+#sarang{
+  background-color: rgb(140, 102, 102);
+  height: 200px;
+  width: 200px;
+  
+}
+
+#sarang>p{
+  font-size: 50px;
+  
+}
+
