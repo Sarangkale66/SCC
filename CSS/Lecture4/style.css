@@ -60,7 +60,7 @@ html,body{
   bottom: 0;
 }
 
-/* .main1>h1::after{
+.main1>h1::after{
   animation-name: anime;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -79,7 +79,7 @@ html,body{
     left: 100%;
     width: 0;
   }
-} */
+}
 
 .main2{
   height: 100%;
