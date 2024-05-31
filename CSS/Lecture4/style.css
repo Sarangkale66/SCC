@@ -60,6 +60,27 @@ html,body{
   bottom: 0;
 }
 
+/* .main1>h1::after{
+  animation-name: anime;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+  0%{
+    left:0;
+    width:0;
+  }
+  50%{
+    left:0;
+    width:100%;
+  }
+  100%{
+    left: 100%;
+    width: 0;
+  }
+} */
+
 .main2{
   height: 100%;
   width: 100%;
@@ -72,5 +93,7 @@ html,body{
 .main2>h1{
   background-color: white;
 }
+
+
 
 
