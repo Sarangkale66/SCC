@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100vh;
+  width: 100vw;
+}
+#main{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100vw;
+  background-color: #000;
+}
+.shaani{
+  height: 20vh;
+  width: 20vh;
+  border: 2px solid black;
+}
+
+.item1{
+  background-color: green;
+  position: static;
+  top: 10%;
+}
+.item2{
+  background-color: blueviolet;
+  /* position: relative;
+  top:100% ;
+  left: 50%; */
+}
+.item3{
+  background-color: brown;
+  /* position: absolute;
+  top: 60%; */
+}
+.item4{
+  background-color: yellow;
+  /* position: sticky;
+  top: 0%;
+  right: 30%; */
+}
+.item5{
+  background-color: violet;
+  /* position: fixed;
+  right: 0%; */
+}
+.page2{
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+  position: relative;
+}
+#btn{
+  height: 10vh;
+  width: 20vh;
+  border-radius: 10vh;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
