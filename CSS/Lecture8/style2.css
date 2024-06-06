@@ -9,13 +9,15 @@ html,body{
 }
 .container{
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   height: 100%;
   width: 100%;
   background-color: black;
 }
 .main1{
-  height: 100%; 
-  width: calc(100%/4);
+  height: 98%; 
+  width: calc(98%/4);
   background-color: rgb(0, 255, 38);
   border: 3px solid black;
 }
@@ -26,16 +28,17 @@ html,body{
 }
 .main2>.item1{
   height: calc(100%/3);
-  width: 100%;
+  width: 98%;
   background-color: rgb(0, 255, 38);
   border: 3px solid black;
 }
 .main2{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .main2>.item2,.item3,.item4,.item5{
-  margin: 1.4px;
   height: calc(98%/3);
   width: calc(98%/2);
   background-color: orange;
@@ -52,4 +55,14 @@ html,body{
   width: 100%;
   background-color: red;
   border: 3px solid black;
+}
+
+@media (max-width:650px){
+  .container{
+    flex-direction: column;
+  }
+  .main1,.main2,.main3
+  {
+    width: 100%;
+  } 
 }
