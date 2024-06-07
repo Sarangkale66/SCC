@@ -7,3 +7,57 @@ html,body{
   height: 100%;
   width: 100%;
 }
+.container{
+  display: grid;
+  grid-template-rows: 70px 1fr 1fr 50px;
+  grid-template-columns: repeat(3,1fr) ;
+  gap:10px;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.item{
+  background-color: orange;
+}
+.kuchbhi,.item11,.item2{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.kuchbhi>.item1{
+  background-color: orange;
+  height: 70%;
+}
+.kuchbhi>.item2{
+  height: 30%;
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(9,1fr);
+  background-color: #fff;
+}
+.item3{
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item6{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background: white;
+}
+.item4{
+  grid-row-start: 3 ;
+  grid-row-end:4 ;
+}
+.subitem{
+  background-color: #000;
+  height: 40%;
+  width: 95%;
+}
+.item6>.subitem{
+  height: 18%;
+  width: 95%;
+}
+
