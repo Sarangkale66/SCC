@@ -20,6 +20,7 @@ html,body{
   background-color: orange;
 }
 .kuchbhi,.item11,.item2{
+  gap:0;
   grid-column-start: 1;
   grid-column-end: 4;
 }
@@ -28,7 +29,7 @@ html,body{
   height: 70%;
 }
 .kuchbhi>.item2{
-  height: 30%;
+  height: 40%;
   display: grid;
   align-items: center;
   grid-template-rows: 1fr;
@@ -43,6 +44,7 @@ html,body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   grid-row-start: 2;
   grid-row-end: 4;
   background: white;

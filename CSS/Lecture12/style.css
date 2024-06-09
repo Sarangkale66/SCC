@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 50%;
+  /* background-color: aliceblue;
+  animation:grad 2s infinite ; */
+}
+@keyframes grad {
+  0%{
+    filter: hue-rotate(0deg);
+  }  
+  100%{
+    filter:hue-rotate(360deg)
+  }
+}
+.spin{
+  height: 120px;
+  width: 120px;
+  border: 10px solid aliceblue;
+  border-top:10px solid greenyellow;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: spin 1.7s linear infinite;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+  
+}
