@@ -15,7 +15,7 @@ body{
 }
 .container1 img {
   height: 300px;
-  width: 300px;
+  width: 500px;
   /* img tag */
   object-fit: contain;
 }
