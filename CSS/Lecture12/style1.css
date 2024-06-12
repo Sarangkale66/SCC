@@ -12,7 +12,7 @@ section{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #042104;
+  background: #303230;
   animation: anime 10s linear infinite;
 }
 @keyframes anime {
@@ -44,7 +44,7 @@ section .loader span::before{
   top: 0;
   width: 15px;
   height: 15px;
-
+  border-radius: 50%;
   background: #00ff0a;
   box-shadow: 0 0 10px #00ff0a,
               0 0 20px #00ff0a,
