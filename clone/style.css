@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+nav{
+  padding: 0px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.navri img{
+  height: 50%;
+}
+.navri{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  gap: 10%;
+}
+.link
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 200%;
+}
+.link a{
+  text-decoration:none;
+  color: black;
+  font-family: "Prompt", sans-serif;
+  font-weight: 600;
+}
+.navle{
+  height: 100%;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Prompt", sans-serif;
+  }
+.navle a,span{
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+.header{
+  padding: 0 150px;
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headle{
+  font-weight: 600;
+  font-family: "Prompt", sans-serif;
+  width: 50%;
+}
+.header a{
+  text-decoration:none;
+  color: black;
+}
+.headle a:hover{
+  text-decoration: underline;
+  }
+.headri{
+  position: relative;
+}
+.headri input{
+  padding: 10px 0;
+  padding-left: 40px;
+  width: 500px;
+  text-align: start;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.headri img{
+  position: absolute;
+  top:15px;
+  left: 15px;
+  height: 20px;
+  width: 20px;
+}
+.container{
+  display: flex;
+  padding: 0 150px;
+  height: 95%;
+  width: 100%;
+}
+.images{
+  height: 95%;
+  width: 50%;
+  display: inline-block;
+}
+.images img{
+  height: 100%;
+  width: 100%;
+}
+.images p{
+  font-size: 17px;
+  font-style: italic;
+  margin: 10px;
+  text-align: right;
+}
+.text{
+  display: inline-block;
+  width: 50%;
+}
+.text1{
+padding-left: 50px; 
+}
+.text1 h1{
+  font-family: "Prompt", sans-serif;
+  font-size: 60px;
+  position: relative;
+  padding: 30px 0px;
+}
+.text1 h1::before{
+  content: "";
+  position: absolute;
+  bottom:0;
+  left:0;
+  height: 5px;
+  width: 11%;
+  background-color: black;
+  transition: all 1s ease-in-out;
+}
+.text1 h1:hover::before{
+  width: 90%;
+}
+.text1 h3{
+  padding-top: 40px;
+  text-align: justify;
+}
+.text1 p{
+  padding:50px;
+  text-align: justify;
+  font-family: "Prompt", sans-serif;
+}
+.text2{
+  padding:50px;
+  text-align: justify;
+}
+.text2 button{
+  height: 60px;
+  width: 250px;
+  border-radius: 50px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: rgb(55, 55, 55);
+  border: none;
+  font-family: "Prompt", sans-serif;
+}
+.button1{
+  display: flex;
+  gap:10px;
+  padding-top: 20px;
+}
+.button1 img{
+  margin: 20px;
+}
+.text2 p{
+  margin: 5px;
+  font-family: "Prompt", sans-serif;
+}
+.text2 .p{
+margin: 15px;
+font-size: 17px;
+}
+.grids{
+  height: 125%;
+  width: 100%;
+  padding: 20px 150px;
+  display: grid;
+  gap: 25px ;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(3,1fr);
+}
+.grids .img1{
+  background:linear-gradient(rgb(69, 165, 114),white,rgb(69, 165, 114));
+}
+.grids .img2{
+  background:linear-gradient(rgb(136, 136, 252),white,rgb(136, 136, 252));
+}
+.grids .img3{
+background:linear-gradient(black,white,black);
+}
+.grids .img4{
+  background:linear-gradient(rgb(12, 6, 62),white,rgb(12, 6, 62));
+}
+.grids .img5{
+  background:linear-gradient(rgb(165, 69, 69),white,rgb(165, 69, 69));
+}
+.grids .img6{
+  background:linear-gradient(rgb(183, 123, 50),white,rgb(183, 123, 50));
+}
+.add .img{
+  height: 85%;
+  width: 100%;
+}
+.sub
+{
+ display: flex;
+ justify-content: space-between;
+ padding: 15px 10px;
+}
+.sub .subb{
+  font-size: 15px ; 
+ font-style: italic;
+ font-family: "Prompt", sans-serif ;
+ font-weight: 400;
+}
+.sub .subb button{
+  font-size: 15px;
+  font-style: italic;
+  font-family: "Prompt", sans-serif ;
+  border: none;
+  background-color: #ffffff;
+}
+.sub .subb button:hover{
+  border-bottom:1px black solid;
+}
+.like button{
+  border-radius: 50%;
+  border:none;
+}
+.like button i{
+  font-size: 20px;
+}
+.like button i{
+  color: rgb(31, 29, 29);
+}
+.like button i:{
+  color: red;
+}

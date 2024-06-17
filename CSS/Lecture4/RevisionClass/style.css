@@ -14,4 +14,9 @@ h1{
   margin:0px auto;
   /* text-align: center; */
   background-color: yellow;
+  border: 2px burlywood solid;
+  border-top-color: rgb(163, 18, 18);
+}
+.main>p::after{
+  content: "Vishu🫥👹";
 }
