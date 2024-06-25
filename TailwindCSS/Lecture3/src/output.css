@@ -446,6 +446,18 @@ video {
   display: none;
 }
 
+@font-face {
+  font-family: 'FiraCode';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../font/FiraCode-Bold.woff) format('woff');
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -554,18 +566,23 @@ video {
   --tw-contain-style:  ;
 }
 
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.w-1\/2 {
-  width: 50%;
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-fit {
@@ -578,16 +595,39 @@ video {
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
-.text-center {
-  text-align: center;
+.font-\[\'Open_Sans\'\] {
+  font-family: 'Open Sans';
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.font-\[\'FiraCode\'\] {
+  font-family: 'FiraCode';
+}
+
+.font-\[\'\'\] {
+  font-family: '';
+}
+
+.text-\[100px\] {
+  font-size: 100px;
+}
+
+.font-\[900\] {
+  font-weight: 900;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-10 {
+  line-height: 2.5rem;
 }
 
 .text-violet-900 {
   --tw-text-opacity: 1;
   color: rgb(76 29 149 / var(--tw-text-opacity));
+}
+
+.hover\:font-sans:hover {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
