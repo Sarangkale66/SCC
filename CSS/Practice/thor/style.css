@@ -106,7 +106,7 @@ p{
   position:absolute;
   top: -100%;
   left: -50%;
-  animation: thund 1s linear 1s infinite;
+  animation: thund 1s linear infinite;
 }
 .back .on{
   height: 150%;
