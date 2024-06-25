@@ -95,7 +95,7 @@ nav{
 .container{
   display: flex;
   padding: 0 150px;
-  height: 95%;
+  height: 100%;
   width: 100%;
 }
 .images{
@@ -240,6 +240,7 @@ background:linear-gradient(black,white,black);
   font-size: 20px;
   color: rgb(31, 29, 29);
 }
+<<<<<<< HEAD:clone/style.css
 .like button i:active
 {
   color: red;
@@ -321,3 +322,68 @@ background:linear-gradient(black,white,black);
       padding:0px;
     }
   }
+=======
+.like button i:active{
+  color: red;
+}
+
+@media (max-width:600px){
+  body{
+    background-color: red;
+  }
+  nav{
+    width: 100vh;
+    padding: 0px 5vw;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .link{
+    display: none;
+  }
+  .navle{
+   position: relative;
+   top: 0;
+   right: -8vw;
+  }
+  .header{
+    padding: 0px;
+    height: 10vh;
+    width: 100%;
+    display: initial;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .headle{
+    width: fit-content;
+    margin: 2vh auto ;
+  }
+  .headri{
+    width: fit-content;
+    margin: 2vh auto ;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -50vw;
+    transform: translate(25vw,0);
+    height: 100vh;
+    width: 100vw;
+    }
+  .text{
+    order: 1;
+    width: 100vw;
+  }
+  .text1{
+    padding: 0;
+  }
+  .images{
+    order: 2;
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .grids{
+    display: none;
+  }
+}
+>>>>>>> c61ac059c14656cedf121eb4024b11781841be36:clone/99Designs/style.css
