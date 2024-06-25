@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D Perspectives</title>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  /* Paste your CSS here */
+  .cube-wrap {
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    width: 200px; /* Adjust container size as needed */
+    height: 200px; /* Adjust container size as needed */
+    margin: 20px;
+    display: inline-block;
+  }
+  .cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 200px; /* Adjust based on container size */
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    backface-visibility: hidden;
+  }
+  .front {
+    background-color: #3498db; /* Blue */
+    transform: translateZ(100px);
+  }
+  .back {
+    background-color: #e74c3c; /* Red */
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  .top {
+    background-color: #2ecc71; /* Green */
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  .bottom {
+    background-color: #f39c12; /* Orange */
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  .left {
+    background-color: #9b59b6; /* Purple */
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  .right {
+    background-color: #f1c40f; /* Yellow */
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  .cube {
+  transform: scale3d(1,1,1) rotateX(10deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
+  background-color: red;
+}
+</style>
+</head>
+<body>
+
+<div class="cube-wrap" style="background-color: red;">
+  <div class="cube">
+    <div class="face front">Front</div>
+    <div class="face back">Back</div>
+    <div class="face top">Top</div>
+    <div class="face bottom">Bottom</div>
+    <div class="face left">Left</div>
+    <div class="face right">Right</div>
+  </div>
+</div>
+
+</body>
+</html>

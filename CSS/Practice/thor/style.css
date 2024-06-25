@@ -1,0 +1,197 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.main{
+  height: 100%;
+  width: 100%;
+  background-image:linear-gradient( to bottom right, red,black);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.theme{
+  height: 60%;
+  width: 70%;
+  background: rgba(57, 57, 57, 0.095);
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 5px 5px 59px;
+}
+.char{
+  height: 80%;
+  width: 60%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6f6f6f9c;
+  transition-property:all ease ;
+  transition-duration: 0s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+}
+.char:hover{
+  background: none;
+  transform: rotateY(180deg);
+}
+.cont{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:3px 3px 20px;
+  border-radius: 10px;
+}
+.imgs{
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.star1,.star2{
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: -2%;
+  left: -2%;
+  background-color: white;
+  z-index: -1;
+  box-shadow: #ffffff 0px 1px 18px 3px;
+}
+.star2{
+  animation: star2 1s ease infinite alternate;
+  /* transform:rotate(45deg); */
+}
+  .star1{
+    animation: star 1s ease infinite alternate;
+  }
+.one{
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+  top:-25%;
+  left:-6%;
+  filter:drop-shadow(5px 5px 5px);
+  object-fit: contain;
+}
+.two{
+  height: 100%;
+}
+p{
+  text-align: center;
+  justify-content: space-between;
+  line-height: 30px;
+  color:rgb(223, 219, 219) ;
+}
+.back{
+  height: 100%;
+  width: 100%;
+  transform: rotateY(180deg);
+}
+.back .thunder{
+  position:absolute;
+  top: -100%;
+  left: -50%;
+  animation: thund 1s linear infinite;
+}
+.back .on{
+  height: 150%;
+  width: 100%;
+  top:-30%;
+  opacity: 50%;
+  position: absolute;
+  object-fit: contain;
+  animation: thor2 1s 1s infinite alternate;
+}
+.back .tw
+{
+  height: 120%;
+  width: 100%;
+  top:0%;
+  position: absolute;
+  object-fit: contain;
+  filter: drop-shadow(20px 20px 20px);
+  animation: thor 1s 1s infinite alternate;
+}
+.cont,.back{
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@keyframes thor {
+  0%
+  {
+  top: -5%;
+  }
+  100%{
+  top:0%;
+  }
+}
+@keyframes thor2 {
+  0%
+  {
+  top: -50%;
+  }
+  100%
+  {
+  top:-45%;
+  }
+}
+@keyframes star {
+  0%{
+    filter: blur(1px);
+    transform: rotate(0deg);
+  }
+  100%{
+    filter: blur(0px);
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes star2 {
+  0%{
+    filter: blur(1px);
+    transform: rotate(45deg);
+  }
+  100%{
+    filter: blur(0px);
+    transform: rotate(315deg);
+  }
+}
+@keyframes thund 
+{
+  0%{
+    opacity: 10%;
+  }  
+  10%{
+    opacity: 70%;
+  }
+  30%{
+    opacity:5%
+    }
+    50%{
+      opacity: 100%;
+    }
+    70%
+    {
+      opacity: 50%;
+    }
+100%{
+  opacity: 30%;
+}
+}
+
