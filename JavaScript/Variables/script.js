@@ -1,5 +1,6 @@
 //declaration
 // let arr;
+////variables in js are like var let const
 
 //initialization 
 // arr=[1,2,3,1];
