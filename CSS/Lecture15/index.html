@@ -33,16 +33,16 @@
     width: 100%;
     height: 100%;
     transform-style: preserve-3d;
-    transition: transform 0.5s ease;
   }
   .face {
     position: absolute;
     width: 100%;
     height: 100%;
-    line-height: 200px; /* Adjust based on container size */
+    line-height: 200px;
+     /* Adjust based on container size */
     text-align: center;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 900;
     color: white;
     backface-visibility: hidden;
   }
@@ -71,14 +71,27 @@
     transform: rotateY(90deg) translateZ(100px);
   }
   .cube {
-  transform: scale3d(1,1,1) rotateX(10deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px) skew(0deg, 0deg);
-  background-color: red;
+  transform: scale3d(1,1,1) rotateX(-40deg) rotateY(-30deg) rotateZ(-10deg) translate3d(0px, 0px, 0px) skew(180deg, 0deg);
+  animation: animate 7s ease-in-out infinite alternate ;
+}
+
+@keyframes animate {
+  0%{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  50%{
+    transform: rotateX(180deg) rotateY(180deg) rotateZ(180deg);
+  }
+  100%{
+    transform: rotateX(360deg) rotateY(36deg) rotateZ(360deg);
+  }
+
 }
 </style>
 </head>
 <body>
 
-<div class="cube-wrap" style="background-color: red;">
+<div class="cube-wrap">
   <div class="cube">
     <div class="face front">Front</div>
     <div class="face back">Back</div>

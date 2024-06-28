@@ -240,89 +240,6 @@ background:linear-gradient(black,white,black);
   font-size: 20px;
   color: rgb(31, 29, 29);
 }
-<<<<<<< HEAD:clone/style.css
-.like button i:active
-{
-  color: red;
-}
-@media (max-width:600px){
-  nav
-  {
-      background-color: red;
-      padding: 0px 0px;
-      justify-content:start;
-      width: 100vh;
-      height: 10vh;
-  }
-  .link
-  {
-    display: none;
-  }
-  .navri{
-    height: 100%;
-    width: fit-content;
-    display: flex;
-  }
-  .navle{
-    height: 100%;
-    width: fit-content;
-    font-family: "Prompt", sans-serif;
-    }
-    .header
-    {
-      padding: 0 0;
-      height: 10vh;
-      width: 100%;
-      display:block;
-      text-align:center;
-    }
-    .headri{
-      text-align:center;
-      position:relative;
-    }
-    .headri input{
-      padding: 10px 0;
-      padding-left: 0px;
-      width: 100%;
-      text-align: start;
-      font-size: 20px;
-      border-radius: 10px;
-      border: 1px solid black;
-    }
-    .headle{
-      font-weight:600;
-      text-align:center;
-      font-family:"Prompt",
-      sans-serif;
-      width:100%;
-    }
-    .container{
-      display: flex;
-      padding: 0 0px;
-      height: 95%;
-      width: 100%;
-    }
-    .container{
-      display: contents;
-      padding: 0px;
-      height: 95%;
-      width: 100%;
-    }
-    .images{
-      height: 95%;
-      width: 100%;
-      padding:10%;
-    }
-    .text{
-      width: 100%;
-    }
-    .grids{
-      height: 75%;
-      width: 100%;
-      padding:0px;
-    }
-  }
-=======
 .like button i:active{
   color: red;
 }
@@ -386,4 +303,3 @@ background:linear-gradient(black,white,black);
     display: none;
   }
 }
->>>>>>> c61ac059c14656cedf121eb4024b11781841be36:clone/99Designs/style.css
