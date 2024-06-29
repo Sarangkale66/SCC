@@ -6,8 +6,37 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+   text-align: center;
+   width: fit-content;
+   background-color: #dada;
+  }
+</style>
 <body>
-  
-  <script src="./script.js"></script>
+  <div class="container">
+    
+  </div>
+
+  <!-- <script src="./script.js"></script> -->
+<script>
+  let container=document.querySelector('.container');
+  container.innerHTML="<h1>thenameisVishu</h1>"
+  console.log("Helloworld");
+</script>
 </body>
 </html>

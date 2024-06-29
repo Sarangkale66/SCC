@@ -20,3 +20,8 @@
   //     console("*");
   //   }
   // }
+
+  
+let container=document.querySelector('.container');
+container.innerHTML=`<div class="hello">sarang</div>`
+

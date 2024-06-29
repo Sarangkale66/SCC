@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center; 
+}
+
+</style>
+<body>
+  <div class="x">0</div>
+  <div class="y">0</div>
+  <div class="ans">0</div>
+</body>
+<script>
+  //only for selection
+  let x=document.querySelector(".x");
+  let y=document.querySelector(".y");
+  let ans=document.querySelector(".ans");
+
+  //only for logic/work/program
+  let a=45;
+  let b=20;
+  let answer=a+b;
+
+  //it is for setting the value in HTML element
+  x.innerHTML=`<h1>my_first_value =${a}</h1>`;
+  y.innerHTML=`<h1>my_second_value =${b}</h1>`;
+  ans.innerHTML=`<h1>answer =${answer}</h1>`;
+</script>
+</html>
