@@ -5,3 +5,5 @@ let total=num1+num2;
 
 // ans.innerHTML=`${total}`;
 console.log(total);
+
+
