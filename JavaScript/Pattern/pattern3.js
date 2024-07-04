@@ -15,3 +15,8 @@ for(let i=0;i<5;i++){
   str+=String.fromCharCode(ch.charCodeAt(0)+i)+" ";
 }
 console.log(str);
+
+// let temp='1';
+// temp=String(temp);
+
+// console.log(temp+1);

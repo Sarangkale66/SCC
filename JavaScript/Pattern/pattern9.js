@@ -8,10 +8,16 @@
 for(let i=0;i<5;i++){
   let str=""
   for(let j=0;j<=i;j++){
-    // if((j<1 || j>3)){
-    //   str+=(j+1)+" "
+    if(i!=4){
+      str+=(j+1+" ");
+    }
+    // else if((j==0 || j==4)){
+    //   str+=j+1+" ";
     // }
-    // else
+    else{
+//          (condition) ? (true) : (false)
+      str+=(j==0||j==4) ? (j+1+" ") :"  ";
+    }
   }
   console.log(str);
 }

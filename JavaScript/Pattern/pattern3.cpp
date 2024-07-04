@@ -9,4 +9,5 @@ int main()
     val=ch+i;
     cout<<val<<" ";
   } 
+
 }

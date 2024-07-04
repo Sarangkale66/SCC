@@ -47,3 +47,14 @@ let x=5, y=7;
 //(**)-calulate raised to power
 // let temp=x**5;
 // console.log("raised to power:",temp);
+
+// (Increment and Decrement)
+// let i=10;
+// console.log(i++);//10
+// console.log(++i);//12
+// console.log(i--);//12
+// console.log(--i);//10
+
+// let ans= i++ + i + i-- + --i + i++;
+// //       10    11   11    9     9 
+// console.log(ans);//50
