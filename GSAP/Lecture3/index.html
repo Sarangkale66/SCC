@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body class="h-screen">
+  <div class="overflow-hidden">
+    <main class="h-screen w-full bg-zinc-600  overflow-hidden">
+        <nav class="w-full h-20 bg-zinc-800 flex justify-between items-center px-5">
+          <div class="flex gap-5">
+            <li class="list-none text-white">Home</li>
+            <li class="list-none text-white">Links</li>
+            <li class="list-none text-white">About</li>
+          </div>
+          <button id="menu" class="list-none px-5 py-1 border-2 w-fit rounded-lg bg-green-600 text-white text-xl font-[600]">Menu</button>
+        </nav>
+        <div id="slidebar" class="w-1/3 h-full bg-slate-400  flex flex-col gap-5 p-10 absolute top-0 right-[-33%] hidden overflow-hidden min-w-fit">
+          <button id="cross" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full w-fit "><i class="ri-xrp-line "></i></button>
+          <li class="list-none text-3xl font-[600]">Info</li>
+          <li class="list-none text-3xl font-[600]">Account</li>
+          <li class="list-none text-3xl font-[600]">Contact</li>
+        </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+  <div class="h-full w-full p-10 overflow-hidden">
+    <div id="box" class="h-1/5 w-1/5 bg-red-600">
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script>
+    // const tl=gsap.timeline({
+    //   repeat: -1
+    // })
+    // tl.to("#box",{
+    //   x:"500px",
+    //   rotate:"360deg",
+    //   duration:2
+    // });
+    // tl.to("#box",{
+    //   y:"400px",
+    //   duration:2
+    // });
+    // tl.to("#box",{
+    //   x:"0px",
+    //   rotate:"-180deg",
+    //   duration:2
+    // })
+    // tl.to("#box",{
+    //   y:"0px",
+    //   duration:2
+    // });
+    gsap.fromTo("#box",{
+      x:500,
+    },{
+      x:100,
+    });
+  </script>
+</body>
+</html>
