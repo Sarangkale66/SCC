@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .page{
+    height: 100%;
+    width: 100%;
+  }
+  .page1{
+    background-color: rgb(83, 0, 0);
+  }
+  .page2{
+    background-color: #ba5e5e;
+  }
+  .page3{
+    background-color: black;
+  }
+  .page2 .box{
+    text-transform: uppercase;
+    color: white;
+    font-size:40vw;
+    font-weight: 600;
+    transform: translateX(30%);
+  }
+</style>
+<body>
+  <div class="page page1">
+    <div class="box"></div>
+  </div>
+  <div class="page page2">
+    <div class="box">
+      Expertise
+    </div>
+  </div>
+  <div class="page page3">
+    <div class="box"></div>
+  </div>
+</body>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+gsap.to(".page2 .box",{
+  transform:"translateX(-150%)",
+  ease:"linear",
+  scrollTrigger:{
+    trigger:".page2",
+    markers:true,
+    scrub:true,
+    pin:true
+  }
+});
+</script>
+</html>

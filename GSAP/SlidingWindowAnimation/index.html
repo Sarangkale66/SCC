@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .page1{
+    background-color: grey;
+  }
+  .page2{
+    background-color: rgb(73, 73, 73);
+  }
+  .page3{
+    background-color: rgb(40, 40, 40);
+  }
+  .box{
+    height: 30%;
+    width: 30%;
+    background-color: red;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+  }
+</style>
+<body>
+  <div class="page page1">
+    <div class="box"></div>
+  </div>
+  <div class="page page2">
+    <div class="box"></div>
+  </div>
+  <div class="page page3">
+    <div class="box"></div>
+  </div>
+</body>
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+let box1=document.querySelector(".page1 .box");
+let box2=document.querySelector(".page2 .box");
+let box3=document.querySelector(".page3 .box");
+gsap.to(box1,{
+  rotate:360,//number or String
+  duration:1,
+  ease:"linear",
+  // repeat:-1
+});
+gsap.from(box2,{
+  //number or String
+  x:100,
+  opacity:0,
+  duration:1,
+  delay:1,
+  scrollTrigger:{
+    trigger:".page2",
+    scroller:"body",
+    markers:true,
+    scrub:true,
+    end:"center",
+    pin:true
+  },
+});
+gsap.to(box3,{
+  rotate:360,//number or String
+  duration:1
+});
+</script>
+</html>

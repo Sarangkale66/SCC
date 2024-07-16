@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+<body>
+  <div id="main">
+    <div class="page1 h-screen w-full bg-zinc-800" data-scroll data-scroll-speed="-8">
+      <nav class="w-full flex h-32 text-white bg-blue-200 items-center justify-evenly text-3xl font-[999]">
+        <li data-scroll data-scroll-speed="0.1" class="list-none">Home</li>
+        <li data-scroll data-scroll-speed="0.1" class="list-none">Contact</li>
+        <li data-scroll data-scroll-speed="0.1" class="list-none">Links</li>
+        <li data-scroll data-scroll-speed="0.1" class="list-none">Products</li>
+      </nav>
+      <div class="main h-screen w-full flex">
+        <div class="mainleft h-full w-1/2 bg-green-600">
+        </div>
+        <div class="mainright h-full w-1/2 bg-red-800"></div>
+      </div>
+    </div>
+    <div class="page2 h-screen w-full bg-blue-600 relative top-0" data-scroll data-scroll-speed="2">
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
