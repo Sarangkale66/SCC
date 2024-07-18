@@ -28,11 +28,12 @@ function locomotive(){
       start:"100% 100%",
       end:"200% 0%"
     }
-  });
+});
 tl.to(".cover",{
   height:"10%",
 },"sara")
-.from(".cover a",{
+
+tl.from(".cover a",{
   opacity:0,
   y:10,
   stagger:0.1

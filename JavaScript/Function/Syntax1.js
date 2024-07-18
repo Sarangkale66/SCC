@@ -7,4 +7,5 @@ function Sum(a,b){
 //}
 
 //calling the function
-console.log(Sum(10,20));
+let ans=Sum(10,20);
+console.log(ans);

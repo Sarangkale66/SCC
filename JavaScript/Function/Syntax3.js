@@ -1,4 +1,4 @@
-let handleSum=()=>{
-  console.log("helloworld")
+let abcd=(a,b)=>{
+  console.log("helloworld",a,b)
 }
-handleSum();
+abcd(10,20);
