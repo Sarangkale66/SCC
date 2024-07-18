@@ -19,17 +19,16 @@ function locomotive(){
   ScrollTrigger.refresh();
 
   let tl=gsap.timeline({
-  scrollTrigger:{
-    trigger:".page1",
-    scroller:"#main",
-    pin:true,
-    markers:true,
-    scrub:true,
-    start:"100% 100%",
-    end:"200% 0%"
-  }
-}
-)
+    scrollTrigger:{
+      trigger:".page1",
+      scroller:"#main",
+      pin:true,
+      markers:true,
+      scrub:true,
+      start:"100% 100%",
+      end:"200% 0%"
+    }
+  });
 tl.to(".cover",{
   height:"10%",
 },"sara")
