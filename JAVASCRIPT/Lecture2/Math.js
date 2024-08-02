@@ -30,5 +30,9 @@ let ans7=Math.min(-1,32,13,5,1,9);
 
 //Very very very Important
 //homework - kha se leke kaha tak wala function
-let ans8=Math.floor(Math.random()*10+10);
-console.log(ans8);
+
+function random(start,end){
+  return Math.floor(Math.random()*(end-start+1)+start); //(0 to 4)+10
+}
+let ans=random(10,15);
+console.log(ans);
