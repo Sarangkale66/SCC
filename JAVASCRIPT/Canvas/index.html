@@ -18,8 +18,30 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" ></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" ></script>
   <script>
+    const frames={
+      currentInd:0,
+      maxInd:382,
+    }
+    let IMAGE=[];
+    let ind=0;
+    function Preload(){
+      for(let i=1;i<=frames.maxInd;i++){
+        let source=`./Frames/frame_${i.toString().padStart(4,0)}.jpg`;
+        //create image tag in javascript
+        let img=new Image();
+        img.src=source;
+        IMAGE.push(img);
+        img.onload=()=>{
+          ind++;
+          if(ind==frames.maxInd){
+            console.log(IMAGE);
+          }
+        }
+      }
+    }
     
-
+    Preload();
+    console.log(IMAGE);
   </script>
 </body>
 </html>
