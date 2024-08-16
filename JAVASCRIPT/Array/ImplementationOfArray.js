@@ -46,22 +46,22 @@ console.log(arr);
 // });
 
 //Map:-agar apko array ko koi nayi condition deke change karana hai toh may use karta hu map
-/*let newArr=arr.map((value,index)=>{
-   if(value>=60 && value<=70)
-     return -1;
-  //  return 0;
-});
-console.log(newArr);
-*/
+// let str=["manisha","simaa","vishakhaa","vedant","vishwaajit"]
+// var key="vish";//search box
+// let newArr=str.map((value,index)=>{
+//    if(value.startsWith(key))
+//      return value;
+//   //  return 0;
+// });
+// console.log(newArr);
 
-/*let str=["manisha","simaa","vishakhaa"]
-//filter- return 
-let newestArr=str.filter(function(val,index){
-  if(val=="sarang")
-    return true;
-});
-console.log(newestArr);
-*/
+// filter- 
+// let ans=str.filter((value,index)=>{
+//     return value.startsWith(key);
+// });
+// console.log(ans);
+
+
 
 
 
