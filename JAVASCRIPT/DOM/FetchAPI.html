@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  #img{
+    height: 200px;
+    width: 200px;
+  }
+</style>
+<body>
+  <h1 id="1" class="head">HelloWorld</h1>
+  <h1 id="2" class="head">Hello1</h1>
+  <h1 id="3" class="head">Hello2</h1>
+  <h1 id="4" class="head">Hello3</h1>
+  <h1 id="5" class="head">Helloworld</h1>
+
+  <img src="" id="img">
+
+<!-- asynchronous js-async await -->
+  <script>
+    let img=document.querySelector("#img");
+    var name;
+    async function APICall(){
+      let blob=await fetch("https://randomuser.me/api/");
+      let data=await blob.json();
+      name=data['results'][0].picture.medium;
+      img.src=name;
+    }
+    APICall();
+  </script>
+</body>
+</html>
