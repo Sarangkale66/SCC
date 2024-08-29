@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #6b6b6b;
+  }
+  .anime{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    position: static;
+    margin: 30px;
+  }
+  .btn{
+    margin-top:5px;
+    width: fit-content;
+    padding:5px 10px;
+    border-radius: 10%;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: rgb(152, 152, 255);
+  }
+  .section{
+    position: relative;
+    padding: 10px;
+    height:50%;
+    width: 70%;
+    border:2px solid black;
+    border-bottom:0px;
+    background: #fff; 
+    font-weight: 900;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .strip{
+    position: absolute;
+    height:4%;
+    border:2px solid #6b6b6b;
+    border-top:2px solid black;
+    width: 70.05%;
+    left: 50%;
+    top: 52.5%;
+    transform: translate(-50%,400%);
+    background-color: #6b6b6b;
+  }
+</style>
+<body>
+  <div class="section">
+    <li class="anime">Not every cat gets 'high' from catnip. Whether or not a cat responds to it depends upon a recessive gene: no gene, no joy.</li>
+    <li class="anime">Purring not always means happiness. Purring could mean a cat is in terrible pain such as during childbirth. Kitten will purr to their mother to let her know they are getting enough milk while nursing. Purring is a process of inhaling and exhaling, usually performed while the mouth is closed.</li>
+    <li class="anime">A cats purr may be a form of self-healing, as it can be a sign of nervousness as well as contentment. Similarly, the frequency of a domestic cats purr is the same at which muscles and bones repair themselves.</li>
+    <li class="anime">A cat can spend five or more hours a day grooming himself.</li>
+  </div>
+  <div class="strip"></div>
+  <button class="btn">click me!</button>
+  
+  <!-- async, await -->
+  <script>
+  let section= document.querySelector(".section");
+  let btn=document.querySelector(".btn");
+
+  function scrollToBottom(){
+    section.scrollTo(0,section.scrollHeight);
+  }
+  function removeFirstChild() {
+    if (section.firstChild) {
+        section.removeChild(section.firstChild);
+    }
+  }
+  async function FetchAPI(){
+    let blob=await fetch("https://meowfacts.herokuapp.com/");
+    let json=await blob.json();
+    console.log(json.data[0]); 
+    section.innerHTML+=`<li class="anime">${json.data[0]}</li>`;
+    if(json){
+      scrollToBottom();
+      removeFirstChild();
+    }
+    console.log(json.data[0]);
+    // section.textContent=json.data[0];
+  }
+  
+  setInterval(()=>{
+    FetchAPI();
+  },3000);
+  </script>
+</body>
+</html>

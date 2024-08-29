@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100%;
+    width: 100%;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  main> div{
+    height: 40px;
+    width: 200px;
+    border: 2px solid black;
+    background: blue; 
+  }
+</style>
+<body>
+  <main>
+    <div class="option" id="1"></div>
+    <div class="option" id="2"></div>
+    <div class="option" id="3"></div>
+    <div class="option" id="4"></div>
+  </main>
+</body>
+<script>
+  let divs=document.querySelectorAll(".option");
+  let n=divs.length;
+  let curr=null;
+  
+  // function reBlue(){
+
+  //   for(let i=0;i<n;i++)
+  //   divs[i].style.backgroundColor="blue";
+
+  // }
+
+  divs.forEach((value,index)=>{
+    value.addEventListener("click",()=>{
+        // reBlue();
+        // value.style.backgroundColor="red";
+        if(curr!=null)
+        curr.style.backgroundColor="blue";
+        value.style.backgroundColor="transparent";
+        curr=value;
+    })
+  });
+</script>
+</html>
