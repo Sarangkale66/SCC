@@ -6,4 +6,4 @@ class Laptop{
   }
 }
 let L1=new Laptop("HP","red");
-console.log(L1.model);
+console.log(L1.name);
