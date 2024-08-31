@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    height: 100vh;
+    width: 100vw;
+  }
+  main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: blue;
+  }
+  main h1{
+    color: aliceblue;
+  }
+  main button{
+    padding: 10px 20px;
+    border-radius: 1vh;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+  }
+  main button:hover{
+    background-color: rgba(0, 0, 255, 0.809);
+    cursor: pointer;
+  }
+</style>
+<body>
+  <main >
+    <h1>HelloWorld</h1>
+    <button>Blue</button>
+  </main>
+</body>
+<script>
+  let main=document.querySelector("main");
+  
+  main.style.backgroundColor="red";
+
+</script>
+</html>
