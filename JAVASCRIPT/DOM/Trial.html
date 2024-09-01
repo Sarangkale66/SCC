@@ -19,7 +19,6 @@
     height: 100%;
     width: 100%;
     /* margin:0px auto; */
-    background-color: red;
   }
   main h1{
     color: aliceblue;
@@ -88,13 +87,17 @@
 
   let main=document.querySelector("main");
   let btns=document.querySelectorAll(".btnContainer button");
-  let kuchbhi=null;
+  let prev=null;
+
   btns.forEach((value,index)=>{
     value.addEventListener("click",()=>{
+      if(prev!==null){
+        prev.style.backgroundColor=String(prev.innerHTML).toLowerCase();
+      }
       main.style.backgroundColor=String(value.innerHTML).toLowerCase();
       value.style.backgroundColor="black";
+      prev=value;
     })
   })
-  
 </script>
 </html>
