@@ -18,11 +18,21 @@
   main{
     height: 100%;
     width: 100%;
-    text-align: center;
-    background-color: blue;
+    /* margin:0px auto; */
+    background-color: red;
   }
   main h1{
     color: aliceblue;
+  }
+  .btnContainer{
+    height: 20vh;
+    /* background: #000; */
+    width: 80vw;
+    margin:0px auto;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: space-evenly;
+    
   }
   main button{
     padding: 10px 20px;
@@ -33,20 +43,58 @@
     font-weight: 800;
   }
   main button:hover{
-    background-color: rgba(0, 0, 255, 0.809);
+    background-color: blue;
     cursor: pointer;
   }
+  .btnContainer button:nth-child(2){
+    background: red;
+  }
+  .btnContainer button:nth-child(3){
+    background: yellow;
+  }
+  .btnContainer button:nth-child(4){
+    background: green;
+  }
+  
 </style>
 <body>
   <main >
-    <h1>HelloWorld</h1>
+    <div class="btnContainer">
+    <!-- <h1>HelloWorld</h1> -->
     <button>Blue</button>
+    <button>Red</button>
+    <button>Yellow</button>
+    <button>Green</button>
+  </div>
   </main>
 </body>
 <script>
-  let main=document.querySelector("main");
-  
-  main.style.backgroundColor="red";
+  // let main=document.querySelector("main");
+  // let btn=document.querySelector("main button")
+  // btn.addEventListener("click",()=>{
+  //   if(btn.innerHTML==="Blue")
+  //   {
+  //     main.style.backgroundColor="blue";
+  //     btn.style.backgroundColor="red";
+  //     btn.innerHTML="Red";
+  //   }
+  //   else{
+  //     main.style.backgroundColor="red";
+  //     btn.style.backgroundColor="blue";
+  //     btn.innerHTML="Blue";
+  //   }
+  // }) 
+  // main.style.backgroundColor="red";
 
+  let main=document.querySelector("main");
+  let btns=document.querySelectorAll(".btnContainer button");
+  let kuchbhi=null;
+  btns.forEach((value,index)=>{
+    value.addEventListener("click",()=>{
+      main.style.backgroundColor=String(value.innerHTML).toLowerCase();
+      value.style.backgroundColor="black";
+    })
+  })
+  
 </script>
 </html>
