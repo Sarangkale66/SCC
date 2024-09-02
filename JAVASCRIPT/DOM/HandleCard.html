@@ -1,59 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 <style>
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  html,body{
+
+  html,
+  body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(98, 98, 98);
+    background-color: #191919;
   }
-  body{
+
+  body {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
   }
-  .drawer{
+
+  .drawer {
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-around;
+    gap: 8px;
     height: 40%;
     width: 100%;
   }
-  #drawer1{
-    background-color: aqua;
+
+  #drawer1 {
+    background-color: #191919;
   }
-  #drawer2{
-    background-color: brown;
+
+  #drawer2 {
+    background-color: #191919;
   }
-  .card{
+
+  .card {
     height: 90%;
-    width: 200px; 
-    background-color: blueviolet;
+    width: 200px;
+    background-color: rgb(56, 55, 57);
     border: 2px solid black;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    height: 60%;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .content {
+    height: 40%;
+    width: 90%;
   }
 </style>
+
 <body>
   <div class="drawer" id="drawer1">
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
+    <div class="card">
+      <div class="image"></div>
+      <div class="content"></div>
+    </div>
   </div>
   <div class="drawer" id="drawer2">
     <div class="card"></div>
     <div class="card"></div>
     <div class="card"></div>
     <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
   </div>
 </body>
+
 </html>
