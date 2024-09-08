@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .s1{
+    color: aqua;
+    font-weight: 900;
+    font-size: xx-large;
+  }
+</style>
+<body>
+  <input type="text" id="kuchbhi">
+  <button onclick="Calculation()">Submit</button>
+  <!-- <button>Submit</button> -->
+  <div></div>
+</body>
+<script>
+  let input=document.querySelector("#kuchbhi");
+  let btn=document.querySelector("button");
+  let field=document.querySelector("div");
+  
+  function Calculation(){
+    field.innerHTML=`<h1 class="s1">${eval(input.value)}</h1>`;
+  }
+
+  // btn.addEventListener("click",()=>{
+  //   field.innerHTML=`<span class="s1">${eval(input.value)}</span> <span>Good Luck</span>`;
+  // });
+</script>
+</html>
