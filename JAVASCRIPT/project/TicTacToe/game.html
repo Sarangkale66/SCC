@@ -10,16 +10,77 @@
   <div class="container">
     <h1>Tic - Tac - Toe</h1>
     <div class="main">
-      <div class="box1 box"></div>
-      <div class="box2 box"></div>
-      <div class="box3 box"></div>
-      <div class="box4 box"></div>
-      <div class="box5 box"></div>
-      <div class="box6 box"></div>
-      <div class="box7 box"></div>
-      <div class="box8 box"></div>
-      <div class="box9 box"></div>
+      <button class="box1 box"></button>
+      <button class="box2 box"></button>
+      <button class="box3 box"></button>
+      <button class="box4 box"></button>
+      <button class="box5 box"></button>
+      <button class="box6 box"></button>
+      <button class="box7 box"></button>
+      <button class="box8 box"></button>
+      <button class="box9 box"></button>
+    </div>
+    <div class="result">
+      <div class="winner"></div>
+      <button id="reset">Reset</button>
     </div>
   </div>
 </body>
+<script>
+  let boxes=document.querySelectorAll(".box");
+  let result=document.querySelector(".result");
+  let reset=document.querySelector("#reset");
+  let winner=document.querySelector("#winner");  
+  let flag=true;
+  let count=9;
+  let win=[[0,1,2],
+           [3,4,5],
+           [6,7,8],
+           [0,3,6],
+           [1,4,7],
+           [2,5,8],
+           [0,4,8],
+           [2,4,6]];
+
+  reset.addEventListener("click",()=>{
+    boxes.forEach((value)=>{
+        value.disabled=false;
+        value.innerHTML="";
+    });
+    count=9;
+    reset.style.visibility="hidden";
+  });
+
+  function checkWin(){
+    win.forEach((value,index)=>{
+      let first=boxes[value[0]].textContent;
+      let second=boxes[value[1]].textContent;
+      let third=boxes[value[2]].textContent;
+      if( first!=="" && first===second && second===third){
+        reset.style.visibility="visible";
+        result.innerHTML=`Winner is ${second}`+result.innerHTML;
+      }
+    });
+  }
+
+  boxes.forEach((value,index)=>{
+      value.addEventListener("click",()=>{
+        if(flag===true){
+          value.innerHTML="X";
+          flag=false;
+        }else{
+          value.innerHTML="O";
+          flag=true;
+        }
+        value.disabled=true;
+        count--;
+        if(count===0){
+          result.innerHTML=`Draw`+ result.innerHTML;
+          reset.style.visibility="visible";
+        }
+        checkWin();
+      });
+  });
+  
+</script>
 </html>
