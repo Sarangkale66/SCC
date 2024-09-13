@@ -22,14 +22,70 @@
     <div class="players">
       <div class="user">
         <h1>User</h1>
-        <div class="scoreone"></div>
+        <div class="scoreone">00</div>
       </div>
       <div class="computer">
         <h1>computer</h1>
-        <div class="scoretwo"></div>
+        <div class="scoretwo">00</div>
       </div>
     </div>
     <div class="message"></div>
   </div>
 </body>
+<script>
+  let UserScore=0;
+  let ComputerScore=0;
+
+  let choices=document.querySelectorAll(".elements div");
+  let message=document.querySelector(".message");
+  let scoreone=document.querySelector(".scoreone");
+  let scoretwo=document.querySelector(".scoretwo");
+
+  function getComputerMove(){
+    let arr=["stone","paper","scissor"];
+    return arr[Math.floor(Math.random()*3)];
+  }
+
+  function Draw(){
+    message.innerHTML="<h1 style='color:blue;'>Draw 🤭</h1>";
+  }
+
+  function showWinner(isUserWin){
+    if(isUserWin){
+      UserScore+=1;
+      scoreone.textContent=UserScore;
+      message.innerHTML="<h1 style='color:red;'>User Win 🥳</h1>"
+    }else{
+      ComputerScore+=1;
+      scoretwo.textContent=ComputerScore;
+      message.innerHTML="<h1 style='color:yellow;'>Computers Win 🫥</h1>"
+    }
+  }
+  
+  choices.forEach((choice)=>{
+    choice.addEventListener("click",()=>{
+      let userMove=choice.getAttribute("class");
+      let computerMove=getComputerMove();
+      //Draw
+      if(userMove===computerMove){
+        Draw();
+      }else{
+        let isUserWin=false;
+        if(userMove==="stone"){
+          isUserWin=(computerMove==="scissor");
+        }
+        else if(userMove==="paper"){
+          isUserWin=(computerMove==="stone");
+        }
+        else if(userMove==="scissor"){
+          isUserWin=(computerMove==="paper");
+        }
+        showWinner(isUserWin);
+      } 
+    });
+  });
+
+
+
+</script>
 </html>
