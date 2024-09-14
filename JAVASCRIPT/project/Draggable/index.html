@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="draggable" draggable="true">1</div>
+    <div class="draggable" draggable="true">2</div>
+  </div>
+  <div class="container">
+    <div class="draggable" draggable="true">3</div>
+    <div class="draggable" draggable="true">4</div>
+  </div>
+</body>
+<script>
+  let container=document.querySelectorAll(".container");
+  let draggable=document.querySelectorAll(".draggable");
+
+  //dragstart
+  //dragover
+  //dragend
+  //drop
+
+  // draggable.forEach((val,index)=>{
+  //   val.addEventListener("dragstart",()=>{
+  //     let selected=val;
+  //     console.log(selected);
+  //   })
+  // });
+
+  // for(let i=0;i<draggable.length;i++){
+  //   draggable[i].addEventListener("dragstart",()=>{
+
+  //   });
+  // }
+
+  for(val of draggable ){
+    val.addEventListener("dragstart",(e)=>{
+      let selected=e.target;
+      container.forEach((elem)=>{
+        elem.addEventListener("dragover",(e)=>{
+           e.preventDefault();
+        });
+        elem.addEventListener("drop",()=>{
+           elem.appendChild(selected);
+           selected=null;
+        });
+      });
+   });
+  }
+
+
+
+
+
+</script>
+</html>
