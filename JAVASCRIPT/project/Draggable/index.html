@@ -43,7 +43,7 @@
       let selected=e.target;
       container.forEach((elem)=>{
         elem.addEventListener("dragover",(e)=>{
-           e.preventDefault();
+          e.preventDefault();
         });
         elem.addEventListener("drop",()=>{
            elem.appendChild(selected);
