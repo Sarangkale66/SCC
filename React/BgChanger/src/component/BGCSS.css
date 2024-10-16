@@ -1,0 +1,25 @@
+.main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.btn{
+  padding: 10px 20px;
+  border: 1.5px soild rgb(255, 255, 255);
+  border-radius: 1.5vh;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+}
+.btn-red{
+  background-color: red;
+}
+.btn-blue{
+  background-color: blue;
+}
+.btn-green{
+  background-color: green;
+}

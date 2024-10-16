@@ -9,6 +9,7 @@ class Laptop{
   getColor(){
     return this.#color;
   }
+  
   //set method
   setName(name1){
     this.#name=name1;

@@ -1,0 +1,49 @@
+#main{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.switch-box{
+  padding: 10px;
+  height: 100px;
+  width: 300px;
+  border-radius: 10vh;
+  box-shadow: 0px 0px 6px 1px black;
+  display: flex;
+  align-items: center;
+  transition: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.circle{
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 6px 1px black;
+  cursor: pointer;
+  transition: all;
+  background-color: white;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.ON{
+  transform: translateX(200px);
+}
+
+.OFF{
+  transform: translateX(0px);
+}
+
+/* conditional rendering */
+/* ()?"true":"false" */
