@@ -4,4 +4,10 @@
   /* position: absolute; */
   background: #3C97FF;
   border-radius:20px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 60px;
+  color: white;
 }

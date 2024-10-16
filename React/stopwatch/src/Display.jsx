@@ -1,8 +1,11 @@
 import './Display.css'
-function Display(){
+// eslint-disable-next-line react/prop-types
+function Display({timeObj}){
   return(
     <>
-    <div className="watch"></div>
+    <div className="watch">
+      {`${timeObj.hr}:${timeObj.min}:${timeObj.sec}:${timeObj.mili}`}
+    </div>
     </>
   )
 }
